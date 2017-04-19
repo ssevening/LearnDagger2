@@ -340,6 +340,8 @@ public class MainActivity extends AppCompatActivity {
 * 9.最后，关于CleanService和TeachService，只是接口定义，所以家庭获取到服务后，并不知具体的实现，后期具体实现也可以直接替换。最终完成了解耦的目的，不会再出现换个网络组件或工具类，要修改大量业务代码的问题。
 
 
+源码地址：[https://github.com/ssevening/LearnDagger2](https://github.com/ssevening/LearnDagger2)
+
 附上个人微信公众号，欢迎交流。
 
 ![个人微信公众号](https://ssevening.github.io/assets/weichat_qrcode.jpg)
