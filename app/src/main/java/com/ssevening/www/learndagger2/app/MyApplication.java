@@ -7,7 +7,7 @@ import com.ssevening.www.learndagger2.di.component.DaggerAppComponent;
 import com.ssevening.www.learndagger2.di.module.ApplicationModule;
 
 /**
- * Created by Pan on 2017/4/19.
+ * Created by ssevening on 2017/4/19.
  */
 
 public class MyApplication extends Application {
@@ -24,6 +24,10 @@ public class MyApplication extends Application {
 
     }
 
+    /**
+     * 获得我们的AppComponent组件，以对外提供服务
+     * @return
+     */
     public AppComponent getAppComponent() {
         return appComponent;
     }

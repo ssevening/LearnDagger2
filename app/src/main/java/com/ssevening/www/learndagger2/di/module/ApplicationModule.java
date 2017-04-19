@@ -44,8 +44,7 @@ public class ApplicationModule {
     /**
      * 然后我们还对外提供保洁服务
      */
-    @Provides // 加上Provides注解，同时声明为单例
-    @Singleton
+    @Provides // 加上Provides注解,保不用保持单例，因为有很多保洁
     CleanService provideCleanService() {
         return new CleanServiceImpl();
     }
@@ -54,7 +53,7 @@ public class ApplicationModule {
      * 继续，我们再提供教育服务
      */
     @Provides
-    @Singleton
+    @Singleton // 只有老板娘一个女儿提供服务，没办法，要单例
     TeachService provideTeachService() {
         return new TeachServiceImpl();
     }

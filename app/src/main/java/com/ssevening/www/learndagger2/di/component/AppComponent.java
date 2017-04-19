@@ -13,14 +13,14 @@ import dagger.Component;
 
 /**
  * 定义一个App组别的组件,对外提供服务
- * Created by Pan on 2017/4/19.
+ * Created by ssevening on 2017/4/19.
  * App 的第一个组件
  */
 @Singleton // Application级别的组件，所以是单例
-@Component(modules = ApplicationModule.class) // 这个组件就职于Application module, 所以获取组件的时候，
+@Component(modules = ApplicationModule.class) // 这个组件就职于 Application module, 所以获取组件的时候，
 // 也要告知其依赖的Modules
 public interface AppComponent {
-
+    // 织入方法
     void inject(Activity activity);
 
     // 可以获取到Application的上下文

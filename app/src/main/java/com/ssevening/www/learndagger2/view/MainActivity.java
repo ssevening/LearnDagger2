@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public MyApplication getMyApp() {
+        // 这里为了代码更直接，所以直接用的强制类型转换，可以考虑定义在BaseActivity之类的
         return (MyApplication) getApplication();
     }
 }
